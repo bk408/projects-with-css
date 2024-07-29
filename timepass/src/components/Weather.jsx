@@ -25,9 +25,9 @@ const Weather = () => {
   const fetchForcast = async () => {
     try {
       const response = await axios(
-        `https://api.tomorrow.io/v4/weather/forecast?location=${city}&apikey=MsASEASim2M2A8McfVHWJpqAmfoI0tnd`
+        `https://api.tomorrow.io/v4/weather/realtime?location=${city}&apikey=MsASEASim2M2A8McfVHWJpqAmfoI0tnd`
       );
-      setForCastData(response.data.timelines.minutely);
+      setForCastData(response.data);
       setError("");
     } catch (error) {
       setError("Please enter city name");
