@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(24, 32, 56);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+#addBtn{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: royalblue;
+    border: none;
+    border-radius: 10px;
+}
+
+#addBtn:hover{
+    background-color: rgb(86, 122, 229);
+}
+
+#taskInput{
+    padding: 10px;
+   border: 2px solid royalblue;
+   border-radius: 10px;
+}
+

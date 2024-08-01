@@ -11,6 +11,7 @@ function App() {
   });
   const [error, setError] = useState("");
   const [sucessMessage, setSuccessMessage] = useState("")
+  const [showPassword, setShowPassword] = useState(false)
 
 
   const handleChange = (e) => {
@@ -79,6 +80,10 @@ function App() {
     }
   };
 
+  const handleToggle = () => {
+     setShowPassword((prevPassword) => !prevPassword)
+  }
+
   return (
     <div className="container">
       <h2>Registration Form</h2>
@@ -111,13 +116,14 @@ function App() {
         <div className="details">
           <label htmlFor="password">Password:</label>
           <input
-            type="password"
+            type={showPassword ? "text" : "password"}
             name="password"
             value={formData.password}
             placeholder="John@123"
             onChange={handleChange}
           />
           {error && <p> {error.password} </p>}
+          <input type="checkbox" name="checkbox" value={showPassword} onChange={handleToggle} />
         </div>
 
         <div className="details">

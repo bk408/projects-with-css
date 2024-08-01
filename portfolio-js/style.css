@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: rosybrown;
+   padding: 5px;
+   
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   flex: 1;
+    
+}
+
+.nav-title span{
+   color: rgba(72, 89, 150, 0.751);
+   
+}
+.nav-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 45px;
+    
+}
+
