@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: rosybrown;
+}
+
+#container{
+    background-color: rgb(85, 97, 132);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   padding: 10px;
+   height: 50vh;
+}
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.844);
+    border: none;
+    border-radius: 25px;
+    font-weight: 800;
+}
+
+button:hover{
+    border-radius: 15px;
+    border-radius: 5px solid rosybrown;
+    background-color:rgba(188, 143, 143, 0.796);
+}
+
+#count{
+    font-size: large;
+}
+
+#count:hover{
+    color: rosybrown;
+}
